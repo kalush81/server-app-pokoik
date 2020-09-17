@@ -21,6 +21,7 @@ if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
 
 const Sequelize = require("sequelize");
 const { STRING, INTEGER} = require("sequelize");
+
 const sequelize = new Sequelize(
   `postgres://postgres:${process.env.PASSWORD}@localhost:5432/postgres`
 );
